@@ -86,28 +86,28 @@ Each layer is purpose-built to ensure data reliability, performance, and analyti
 ### Import vs Export Trends
 This view compares annual import and export values to highlight trade flow patterns over time.
 
-![Import vs Export Trends](screenshots/import_export_trends.png)
+![Import vs Export Trends](screenshots/import_export_trends.png.png)
 
 ---
 
 ### Top 10 Trading Countries
 Displays the leading trading countries based on total trade value for the selected year.
 
-![Top Trading Countries](screenshots/top_countries.png)
+![Top Trading Countries](screenshots/top_countries.png.png)
 
 ---
 
 ### Top 10 Products by Trade Value
 Highlights the most traded product categories using SQL window functions and aggregated metrics.
 
-![Top Products](screenshots/top-products.png)
+![Top Products](screenshots/top-products.png.png)
 
 ---
 
 ### Trade Balance Over Time
 Shows the annual trade balance calculated as total exports minus total imports.
 
-![Trade Balance](screenshots/all-views.png)
+![Trade Balance](screenshots/all-views.png.png)
 
 ---
 
