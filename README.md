@@ -90,36 +90,29 @@ global-trade-analytics/
 ├── README.md
 │
 ├── data/
-│   ├── raw/
-│   │   └── trade_uncomtrade_raw.csv
-│   │
-│   └── processed/
-│       └── trade_slim_uncomtrade_correct.csv
+│   ├── trade_uncomtrade_raw.csv
+│   └── trade_uncomtrade_processed.csv
 │
 ├── sql/
-│   ├── 00_schema.sql
-│   ├── 01_stage_tables.sql
-│   ├── 02_raw_tables.sql
-│   ├── 03_fact_tables.sql
-│   ├── 04_analytics_views.sql
-│   ├── 05_trade_balance.sql
+│   ├── schema.sql
+│   ├── stage.sql
+│   ├── raw.sql
+│   ├── fact.sql
+│   ├── analytics_views.sql
+│   └── trade_balance.sql
 │
 ├── powerbi/
-│   ├── Global_Trade_Analytics.pbix
-│   └── README.md
+│   └── Global_Trade_Analytics.pbix
 │
 ├── screenshots/
-│   ├── 01_import_export_trends.png
-│   ├── 02_top_countries.png
-│   ├── 03_top_products.png
-│   └── 04_trade_balance.png
+│   ├── import_export_trends.png
+│   ├── top_countries.png
+│   ├── top_products.png
+│   └── trade_balance.png
 │
-├── docs/
-│   ├── data_model.md
-│   ├── architecture.md
-│   └── assumptions.md
-│
-└── .gitignore
+└── docs/
+    ├── data_model.md
+    └── architecture.md
 
 ---
 
