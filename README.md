@@ -86,24 +86,40 @@ Each layer is purpose-built to ensure data reliability, performance, and analyti
 
 ## Repository Structure
 global-trade-analytics/
+│
 ├── README.md
+│
 ├── data/
-│ └── trade_slim_uncomtrade_correct.csv
+│   ├── raw/
+│   │   └── trade_uncomtrade_raw.csv
+│   │
+│   └── processed/
+│       └── trade_slim_uncomtrade_correct.csv
+│
 ├── sql/
-│ ├── 01_stage_table.sql
-│ ├── 02_raw_table.sql
-│ ├── 03_fact_table.sql
-│ ├── 04_views_top_n.sql
-│ └── 05_trade_balance.sql
+│   ├── 00_schema.sql
+│   ├── 01_stage_tables.sql
+│   ├── 02_raw_tables.sql
+│   ├── 03_fact_tables.sql
+│   ├── 04_analytics_views.sql
+│   ├── 05_trade_balance.sql
+│
 ├── powerbi/
-│ └── Global_Trade_Dashboard.pbix
+│   ├── Global_Trade_Analytics.pbix
+│   └── README.md
+│
 ├── screenshots/
-│ ├── import_export_trends.png
-│ ├── top_countries.png
-│ ├── top_products.png
-│ └── trade_balance.png
-└── docs/
-└── data_model.md
+│   ├── 01_import_export_trends.png
+│   ├── 02_top_countries.png
+│   ├── 03_top_products.png
+│   └── 04_trade_balance.png
+│
+├── docs/
+│   ├── data_model.md
+│   ├── architecture.md
+│   └── assumptions.md
+│
+└── .gitignore
 
 ---
 
