@@ -110,6 +110,20 @@ Shows the annual trade balance calculated as total exports minus total imports.
 ![Trade Balance](screenshots/all-views.png)
 
 ---
+## SQL Pipeline
+
+The SQL logic for this project is organized into modular scripts under the `sql/` directory:
+
+- [`schema.sql`](sql/schema.sql) – Creates the project schema
+- [`stage.sql`](sql/stage.sql) – Defines the staging table for CSV ingestion
+- [`raw.sql`](sql/raw.sql) – Standardizes columns into a clean raw layer
+- [`fact.sql`](sql/fact.sql) – Builds the analytics-ready fact table
+- [`analytics_views.sql`](sql/analytics_views.sql) – Implements Top-N and trend views using window functions
+- [`trade_balance.sql`](sql/trade_balance.sql) – Computes annual exports, imports, and trade balance
+
+Scripts are designed to be executed in the order listed above after loading the CSV into the staging table.
+
+---
 
 ## Repository Structure
 global-trade-analytics/
@@ -142,19 +156,7 @@ global-trade-analytics/
     └── architecture.md
 
 ---
-## SQL Pipeline
 
-SQL scripts are stored in the `sql/` directory:
-
-- `schema.sql` – Creates the project schema
-- `stage.sql` – Defines the staging table for CSV ingestion
-- `raw.sql` – Standardizes columns into a raw layer
-- `fact.sql` – Builds the analytics-ready fact table
-- `analytics_views.sql` – Creates Top-N and trend views using window functions
-- `trade_balance.sql` – Computes annual exports, imports, and trade balance
-
-Scripts are designed to be executed in the order listed above after loading the CSV into the staging table.
----
 ## How to Use This Project
 
 1. Load the CSV data into PostgreSQL using the staging scripts  
