@@ -10,7 +10,13 @@ This project delivers an end-to-end analytics solution for global trade data sou
 The project focuses on real-world data challenges such as schema mismatches, data type inconsistencies, and scalable aggregation strategies commonly encountered in enterprise analytics environments.
 
 ---
+## Project Highlights
 
+- Processed and modeled 100K+ global trade records using PostgreSQL
+- Built a layered analytics pipeline (staging → raw → fact)
+- Implemented Top-N analytics using SQL window functions
+- Delivered interactive Power BI dashboards with trade balance and YoY insights
+---
 ## Architecture
 
 → Staging Layer
