@@ -142,7 +142,19 @@ global-trade-analytics/
     └── architecture.md
 
 ---
+## SQL Pipeline
 
+SQL scripts are stored in the `sql/` directory:
+
+- `schema.sql` – Creates the project schema
+- `stage.sql` – Defines the staging table for CSV ingestion
+- `raw.sql` – Standardizes columns into a raw layer
+- `fact.sql` – Builds the analytics-ready fact table
+- `analytics_views.sql` – Creates Top-N and trend views using window functions
+- `trade_balance.sql` – Computes annual exports, imports, and trade balance
+
+Scripts are designed to be executed in the order listed above after loading the CSV into the staging table.
+---
 ## How to Use This Project
 
 1. Load the CSV data into PostgreSQL using the staging scripts  
